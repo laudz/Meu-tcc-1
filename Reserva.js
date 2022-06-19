@@ -1,6 +1,7 @@
-import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Touchable, TouchableOpacityComponent, TouchableHighlight } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Touchable, TouchableOpacityComponent, TouchableHighlight, Image } from 'react-native';
 import React, {useState} from 'react'; 
 import { Picker } from 'react-native-web';
+import { Input } from 'react-native-elements';
 
 export default function Reserva(props)
 {
@@ -8,48 +9,453 @@ export default function Reserva(props)
     return (
         
         <View style={styles.container}>
-            <Text></Text>
-
+            
+            <Image source={require('../Image/carro.png')}
+               style= {{width: 250, height: 250}}>
+            </Image>
 <View style={styles.selecionador}>
-    <Text> QUAL VAGA DESEJA SELECIONAR?</Text>
+    <Text> Qual turno deseja?</Text>
     <Picker>
         <Picker.Item label ="     SELECIONE     " value= "     SELECIONE     " />
-        <Picker.Item label ="A1" value= "A1" />
-        <Picker.Item label ="A2" value= "A2" />
-        <Picker.Item label ="A3" value= "A3" />
-        <Picker.Item label ="A4" value= "A4" />
-        <Picker.Item label ="A5" value= "A5" />
-        <Picker.Item label ="A6" value= "A6" />
-        <Picker.Item label ="A7" value= "A7" />
-        <Picker.Item label ="A8" value= "A8" />
-        <Picker.Item label ="A9" value= "A9" />
-        <Picker.Item label ="B1" value= "B1" />
-        <Picker.Item label ="B2" value= "B2" />
+        <Picker.Item label ="MANHÃ" value= "A1" />
+        <Picker.Item label ="TARDE" value= "A2" />
+        <Picker.Item label ="NOITE" value= "A3" />
+        
     </Picker>
+
+    <Text style = {styles.titulo}>Selecione a vaga que desejar e confirme no botao abaixo:</Text>
+
+
 </View>
+<Text> Fileira 1 </Text>
 
-<TouchableHighlight 
-      title='Turno Manhã'
-      style={styles.btnConta}
-      onPress={()=>props.navigation.navigate('')}> 
-<Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno Manhã</Text>
-</TouchableHighlight>
+   <View style={styles.Fila1}>
+   <Text> </Text>
+<TouchableOpacity 
 
-<TouchableHighlight 
-      title='Turno Noite'
-      style={styles.btnReservar}
+
+      title='VAGA 1'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+
+
+
+</TouchableOpacity>
+
+<TouchableOpacity 
+      title='VAGA 2'
       onPress={()=>props.navigation.navigate('')}> 
+      <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
 <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno Noite</Text>
-</TouchableHighlight>
+</TouchableOpacity>
 
-<TouchableHighlight 
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+
+
+</View> 
+<Text>Fileira 2</Text>
+<View style={styles.FilaDois}>
+    
+<TouchableOpacity 
+
+      title='VAGA 1'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+
+
+
+</TouchableOpacity>
+
+<TouchableOpacity 
+      title='VAGA 2'
+      onPress={()=>props.navigation.navigate('')}> 
+      <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+<Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno Noite</Text>
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+
+
+</View> 
+
+<Text> Fileira 3 </Text>
+<View style={styles.FilaDois}>
+<TouchableOpacity 
+
+      title='VAGA 1'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+
+
+
+</TouchableOpacity>
+
+<TouchableOpacity 
+      title='VAGA 2'
+      onPress={()=>props.navigation.navigate('')}> 
+      <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+<Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno Noite</Text>
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+<TouchableOpacity 
+
+      title='Turno Manhã'
+      onPress={()=>props.navigation.navigate('')}>
+        <Image source={require('../Image/vaga.png')} style={{width: 50, height: 50}} />
+      
+        <Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Turno manhã</Text>
+        
+</TouchableOpacity>
+
+
+
+</View> 
+
+
+
+
+
+
+
+<TouchableOpacity 
+
       title='Confirmar'
       style={styles.btnConfirmar}
-      onPress={()=>props.navigation.navigate('Pagamento')}> 
-<Text style={{color:'#98F5FF', textAlign: 'center', fontWeight:'bold', fontVariant: 'oldstyle-nums' }}>Confirmar</Text>
-</TouchableHighlight>
       
+      onPress={()=>props.navigation.navigate('Pagamento')}> 
+<Image source={require('../Image/confirmar.png')} style={{width: 50, height: 50}} />
+</TouchableOpacity>
+   
+
+
+
         </View>
+
+        
     );
 }
 
@@ -66,42 +472,53 @@ const styles = StyleSheet.create({
     
 },
 
-btnConta: {
-    width:'100%',
-        height:50,
-        backgroundColor:'#6E7B8B',
-        borderRadius: 20,
-        justifyContent:'center',
-        marginBottom: 10
-},
-
-btnReservar: {
-    width:'100%',
-        height:50,
-        backgroundColor:'#6E7B8B',
-        borderRadius: 20,
-        justifyContent:'center',
-        marginBottom: 10
-},
 
      selecionador: {
     
-    widht:300,
-    height:250,
+    widht:100,
+    height:100,
     backgroundColor: '#98F5FF',
-    marginTop:40
-
+    marginTop:40,
+    
 },
 
 btnConfirmar: {
-    width:'30%',
+    width:'100%',
         height:30,
-        backgroundColor:'#6E7B8B',
-        borderRadius: 20,
         justifyContent:'center',
-        marginBottom: 10
+        marginBottom: 10,
+        alignItems:'center'
         
 
 },
+
+Fila1: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+            justifyContent: 'center',
+},
+
+FilaDois: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+            justifyContent: 'center',
+},
+
+FilaTres: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+            justifyContent: 'center',
+            padding: '100'
+},
+titulo: {
+    fontSize:17,
+    fontWeight: 'bold',
+    color: 'red',
+    height:60
+    
+}
 
 });
