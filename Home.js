@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, Button, StyleSheet, TextInput, TouchableHighlight  } from 'react-native';
+import { Text, View, Button, StyleSheet, TextInput, TouchableHighlight, Image  } from 'react-native';
 
 
 export default function Home(props)
@@ -10,6 +10,9 @@ export default function Home(props)
         
         <View style={styles.container}>
             
+            <Image source={require('../Image/carro.png')}
+               style= {{width: 250, height: 250}}>
+            </Image>
             <TouchableHighlight 
             title='IR PARA TELA DE CADASTRO!' 
             style={ styles.BtnTelaCadastro } 
