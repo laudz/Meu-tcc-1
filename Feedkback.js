@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Touchable, TouchableOpacityComponent,Image, TouchableHighlight } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button, TouchableOpacity, Touchable, TouchableOpacityComponent, Image, TouchableHighlight } from 'react-native';
 import React, {useState} from 'react'; 
 import Slider from '@react-native-community/slider'
 import { Input } from 'react-native-elements';
@@ -21,47 +21,48 @@ export default function Feedback(props)
 
 
 
-
-
+<View
+style={styles.btnEstrelas}>
 <TouchableOpacity
       title='1'
-      style={styles.btn1}
+      
       onPress={()=>props.navigation.navigate('')}> 
-<Image source={require('../image/star.png')} style={{width: 50, height: 50}} />
+<Image source={require('../Image/estrela.png')} style={{width: 50, height: 50}} />
 
 </TouchableOpacity>
 
 <TouchableOpacity
       title='1'
-      style={styles.btn1}
+      
       onPress={()=>props.navigation.navigate('')}> 
-<Image source={require('../image/star.png')} style={{width: 50, height: 50}} />
+<Image source={require('../Image/estrela.png')} style={{width: 50, height: 50}} />
 
 </TouchableOpacity>
       
 <TouchableOpacity
       title='1'
-      style={styles.btn1}
+      
       onPress={()=>props.navigation.navigate('')}> 
-<Image source={require('../image/star.png')} style={{width: 50, height: 50}} />
+<Image source={require('../Image/estrela.png')} style={{width: 50, height: 50}} />
 
 </TouchableOpacity>
 
 <TouchableOpacity
       title='1'
-      style={styles.btn1}
+     
       onPress={()=>props.navigation.navigate('')}> 
-<Image source={require('../image/star.png')} style={{width: 50, height: 50}} />
+<Image source={require('../Image/estrela.png')} style={{width: 50, height: 50}} />
 
 </TouchableOpacity>
 <TouchableOpacity
       title='1'
-      style={styles.btn1}
+      
       onPress={()=>props.navigation.navigate('')}> 
-<Image source={require('../image/star.png')} style={{width: 50, height: 50}} />
+<Image source={require('../Image/estrela.png')} style={{width: 50, height: 50}} />
 
 </TouchableOpacity>
 
+</View>
         </View>
     );
 }
@@ -75,8 +76,15 @@ const styles = StyleSheet.create({
             backgroundColor: '#98F5FF',
             alignItems: 'center',
             justifyContent: 'center',
-            padding: 180
+            padding:600
     
 },
+btnEstrelas: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+            justifyContent: 'center',
+}
+
 
 });
